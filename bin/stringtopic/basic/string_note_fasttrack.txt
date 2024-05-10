@@ -1,0 +1,155 @@
+String(Multiple Characters)
+--------------------------------
+	1) Character Array:
+	------------------------
+		char name[] = new char[500];
+
+	2) String(class)---->"Methods":-
+	------------------------------
+String---"java.lang.String"
+System
+-------------------------------------------------------------------------------------
+Single Character:-
+------------------		
+
+	1) int value = System.in.read();// A--65
+	   char a = (char)value;// SOP(value);---6
+	   -------------------------------------------
+	   char value = (char)System.in.read();// A
+	   SOP(value);// A
+----------------------------------------------------------------------------------
+		Scanner sc = new Scanner(System.in);	
+
+	2) char value = sc.next().charAt(0);//t
+	   SOP(value);// t
+---------------------------------------------------------------------------------
+		Scanner sc = new Scanner(System.in);
+		// 1) Single Line --Single word
+//		System.out.println("Enter Name1 : ");
+//		String name1 = sc.next();
+//		
+//		System.out.println("Name1 : " + name1);
+//--------------------------------------------------------------------------		
+		// 2) Single Line --Multiple words
+		System.out.println("Enter Name2 : ");
+		String name2 = sc.nextLine();
+		
+		System.out.println("Name2 : " + name2);
+---------------------------------------------------------------------------------
+
+		Way to operation on String
+		---------------------------
+1) ImmutableWay				2)  MutableWay
+-----------------			-----------------
+String(class)				---> StringBuilder(class)
+					---> StringBuffer(class)--Threadsafe
+
+
+	concat<------------------------->append
+	-----<-------------------------->reverse()
+
+
+
+--------------------------------------------------------------------------------------------
+1) ImmutableWay(String):-
+------------------------
+	1) By String Literal Way[RAM----HEAP----["SCP"]--["String Constant Pool"]]:-
+	----------------------------
+
+		String name1 = "royal is";
+		
+		String name2 = "royal";
+		
+		String name3 = "rakesh";
+		
+		String name4 = name3;
+
+		String name5 = name1.concat(" techno");
+
+		// royal was
+		name1 = name1.replace("is","was");
+	
+
+	2) By 'new' keyword Way[RAM----HEAP]:-
+	---------------------------------------
+
+		String name1 = new String("royal");
+		String name2 = new String("royal");
+		String name3 = new String("royal");
+
+Object Equality:-
+------------------
+
+	1) ==(reference)
+
+		String name1 = "abc";
+		String name2 = "abc";
+		String name3 = "def";
+		String name4 = new String("abc");
+
+
+		SOP(name1==name2);// true
+		SOP(name1==name3);// false
+		SOP(name1==name4);// false
+
+
+	2) .equals()---value
+
+		String name1 = "abc";
+		String name2 = "abc";
+		String name3 = "def";
+		String name4 = new String("abc");
+
+		SOP(name1.equals(name2));// true
+		SOP(name1.equals(name3));// false
+		SOP(name1.equals(name4));// true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)  MutableWay:-
+------------------
+	StringBuilder sb1 = new StringBuilder("royal");
+
+	StringBuffer sb2 = new StringBuffer("royal");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
