@@ -1,0 +1,236 @@
+Exception - Abnormal things
+-----------
+
+
+	Statement-----1
+	Statement-----2
+	Statement-----3
+	Statement-----4
+	Statement-----5
+
+	---raise exception---code crashed---JVM Abnormal Terminate---excution STOP
+
+	Statement-----6
+	Statement-----7
+	Statement-----8
+	Statement-----9
+	Statement-----10
+
+
+
+
+
+
+	10 / 0 - ArithmeticException 
+
+
+	String name = null;
+	SOP(name.length());// NullpointerException
+
+
+	int a[] = new int[5];
+	a[5] = 100;// ArrayIndexoutofBoundException
+
+
+	String value = "1a2";
+	int no = Integer.parseInt(value);// NumberFormatException
+	SOP(no);
+
+		A
+		|
+	-----------------
+	|		|
+	B		C
+
+// Upcasting
+A obj = new B();
+
+// Downcasting---instanceof
+C obj1 = (C)obj;// ClassCastException
+
+				Type of Exception
+				-------------------
+	1) Checked Exception			2) UnChecked Exception
+	----------------------			----------------------
+		|					|
+	compileTime--compiler			  Runtime---JVM
+
+
+Checked Exception:-
+------------------
+
+	AHM to GNR
+
+	d:\test.txt----read	
+
+connection open file
+
+FileNotFoundException
+
+		FileOutputtStream out  = new FileOutputStream("d:/test.txt");
+----------------------------------------------------------------------------------------------------------------
+				Hierarchy of Exception
+				-------------------------
+				
+					Object(C)
+					  |
+					Throwable(C)
+					  |
+			---------------------------------------------------
+			  |					|
+			Exception(C)			      Error	
+			  |
+	---------------------------------------
+	|--checked			  		  |--UnChecked---Runtime---JVM		
+--FileNotFoundException(C) 	RuntimeException				 
+--SQLException				      |
+--ClassNotFoundException	  ---ArithmeticException	
+				  			  ---ArrayIndexOufofBoundException
+				  			  ---NullPointerException
+				  			  ---StringIndexOutofBoundException
+				  			  ---NumberFormateException
+				  				  ---....
+
+
+			   
+
+
+
+	
+
+
+
+
+
+
+Exception Handling code:-
+-------------------------
+
+try
+{
+
+}catch(ExceptionName refere)
+{
+
+}
+
+
+JAVA WebServices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try
+{
+	// code ---raise exception
+}
+catch()
+{
+	// excception handle
+}
+finally 
+{
+	// code execute
+}
+-------------------------------------
+try
+{
+}catch()
+{
+}
+--------------
+try
+{
+}catch()
+{
+}finally
+{
+}
+--------------
+try
+{
+}catch()
+{
+}catch()
+{
+}finally
+{
+}
+--------------
+try
+{
+
+}finally
+{
+}
+
+
+
+
+class A
+{
+	void test1()
+	{
+	}
+}
+class B extends A
+{
+	void test1()
+	{
+	}
+}
+******************************************************
+Exception Handling with Method Overriding in Java
+******************************************************
+
+If the superclass method does not declare an exception
+******************************************************
+	===> subclass overridden method cannot declare the checked exception 
+	     but it can declare unchecked exception.
+
+If the superclass method declares an exception
+******************************************************
+	===> subclass overridden method can declare same, 
+
+	===> subclass exception 
+
+	===> or no exception 
+
+	===> but cannot declare parent exception.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

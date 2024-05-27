@@ -1,0 +1,91 @@
+Stream -- Buffer Area
+--------
+
+			  Type of Stream
+			  ---------------
+				|
+  ---------------------------------------------------------------	
+   |				   |			     |
+ (write)			  (read)		  (Errorlog)	
+OutputStream			InputStream		  ErrorStream
+
+
+
+         OutputStream(write)	
+Program--------------------->console/File/Socket
+
+System.out--->Console
+
+System.out.println("Hello World");
+
+
+
+                       InputStream(read)	
+Memory<----Program<---------------------console/File/Socket
+
+System.in ---> Console
+
+	Scanner sc = new Scanner(System.in);
+
+	int no1 = sc.nextInt();
+
+
+
+display for Error log(ErrorStream):-
+----------------------------------------
+
+	System.err.println("Hello World
+IO(InputStream / OutputStream)
+
+
+
+
+
+Type to write / read Data in Text File:-
+-------------------------------------------
+
+
+Data---[String / object(user Defined Typed objects)]
+
+
+1) Byte oriented way:-
+-------------------------
+	Data---[String / object(user Defined Typed objects)]
+
+String (Byte oriented way):-
+-------------------------------
+
+	===> write [FileOutputStream]
+
+	===> read  [FileInputStream]
+
+
+2) character oriented way:-
+-----------------------------
+	Data---[String]
+
+
+	===> write
+
+	===> read
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
