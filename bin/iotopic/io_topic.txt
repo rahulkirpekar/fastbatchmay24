@@ -60,14 +60,36 @@ String (Byte oriented way):-
 	===> read  [FileInputStream]
 
 
+Object(user Defined Typed objects) (Byte oriented way):-
+---------------------------------------------------------
+
+	===> write [FileOutputStream]
+					|
+				ObjectOutputStream---->[writeObject]
+	
+	
+
+	===> read  [FileInputStream]
+					|
+				ObjectInputStream---->[readObject]	
+
+
+
+
+
+
+
+
+
+
 2) character oriented way:-
 -----------------------------
 	Data---[String]
 
 
-	===> write
+	===> write(FileWriter)
 
-	===> read
+	===> read(FileReader)
 
 
 

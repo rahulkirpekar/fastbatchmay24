@@ -1,0 +1,31 @@
+Innerclass:-
+---------------
+
+1) Member Innerclass 
+2) Anonymous Innerclass 
+3) Local Innerclass 
+4) Nested Innerclass 
+
+
+
+
+
+class A
+{
+	// private properties----logic access
+
+	int no1 = 100;//B
+	static int no2 = 200;//C
+
+	// Member---Innerclass  
+	class B
+	{
+
+	}
+
+	// Nested Class----Innerclass  
+	static class C
+	{
+
+	}
+}
