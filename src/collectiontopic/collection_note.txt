@@ -1,0 +1,59 @@
+Collection Framework:-
+------------------------
+
+	Array Limitations:-
+	--------------------
+		int a[] = new int[5];
+
+		1) same DataType
+		2) fixed size---compileTime
+
+			Hierarchy of Collection---[java.util.*]
+			------------------------
+
+				Iterable(I)------------------------------------------------------
+				   |								|
+				Collection(I)							|
+				   |								|
+				   |								|
+				   |D								|
+	------------------------------------------------------------				|
+	|			   |				|				|(Key,value)
+      List(I)			Set(I)			    Queue(I)		 	       Map(I)(K,V)
+	|			   |				|				|
+AbstractList(AC)	   AbstractSet(AC)		AbstractQueue(AC)		   AbstractMap(AC)
+	|			   |				|				|
+--ArrayList(C)			--HashSet(C)		--PriorityQueue(C)		--HashMap(C)
+--LinkedList(C)			--LinkedHashSet(C)					--LinkedHashMap(C)
+--Vector(C)			--TreeSet(C)						--TreeMap(C)
+
+List(I):-
+--------
+	--->Allow to store duplicate value
+	--->can access random value
+	--->Maintain Insertion order
+
+--ArrayList(C)	
+
+
+
+
+	boolean----Boolean
+	short---Short
+	char--Character
+	int---Integer
+	long---Long
+	float---Float
+	double---Double
+	
+
+
+
+
+
+
+
+
+
+
+
