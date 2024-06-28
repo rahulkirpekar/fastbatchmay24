@@ -3,6 +3,7 @@ Collection Framework:-
 
 	Array Limitations:-
 	--------------------
+	
 		int a[] = new int[5];
 
 		1) same DataType

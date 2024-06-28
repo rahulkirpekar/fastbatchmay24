@@ -2,6 +2,7 @@ package collectiontopic.listtopic;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class TestApp1 
 {
@@ -57,22 +58,60 @@ public class TestApp1
 //		}
 		// 3) Traditional way By Iterator method
 		
-		Iterator itr =	listObj.iterator();
+//		Iterator itr =	listObj.iterator();
+//		while(itr.hasNext()) 
+//		{
+//			Object obj = itr.next();
+//
+//			if(obj instanceof Student)                                                 
+//			{                                                                          
+//				Student s1 = (Student)obj;                                             
+//				                                                                       
+//				System.out.println(s1.getRno()+" " + s1.getName() + " "+s1.getStd());  
+//			                                                                           
+//			}else                                                                      
+//			{                                                                          
+//				System.out.println(obj);                                               
+//			}			                                                               
+//		}
 		
-		while(itr.hasNext()) 
+		// 4) ListIterator way = [forward + backward]
+		
+		// forward Iteration
+		ListIterator litr =	listObj.listIterator();
+		
+		while (litr.hasNext()) 
 		{
-			Object obj = itr.next();
+			Object obj = (Object) litr.next();
+			
+			if(obj instanceof Student)                                                             
+			{                                                                                      
+				Student s1 = (Student)obj;                                                            
+				                                                                                      
+				System.out.println(s1.getRno()+" " + s1.getName() + " "+s1.getStd());                 
+			                                                                                       
+			}else                                                                                  
+			{                                                                                      
+				System.out.println(obj);                                                              
+			}			                                                                                   
+		}
+		
+//		backward direction iteration
+		
+		while(litr.hasPrevious()) 
+		{
+			Object obj = (Object)litr.previous();	
 
-			if(obj instanceof Student)                                                 
-			{                                                                          
-				Student s1 = (Student)obj;                                             
-				                                                                       
-				System.out.println(s1.getRno()+" " + s1.getName() + " "+s1.getStd());  
-			                                                                           
-			}else                                                                      
-			{                                                                          
-				System.out.println(obj);                                               
-			}			                                                               
+			if(obj instanceof Student)                                                             
+			{                                                                                      
+				Student s1 = (Student)obj;                                                            
+				                                                                                      
+				System.out.println(s1.getRno()+" " + s1.getName() + " "+s1.getStd());                 
+			                                                                                       
+			}else                                                                                  
+			{                                                                                      
+				System.out.println(obj);                                                              
+			}	
 		}
 	}
 }
