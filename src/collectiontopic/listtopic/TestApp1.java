@@ -97,10 +97,9 @@ public class TestApp1
 		}
 		
 //		backward direction iteration
-		
 		while(litr.hasPrevious()) 
 		{
-			Object obj = (Object)litr.previous();	
+			Object obj = litr.previous();	
 
 			if(obj instanceof Student)                                                             
 			{                                                                                      
