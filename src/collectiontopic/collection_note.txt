@@ -18,9 +18,9 @@ Collection Framework:-
 				   |								|
 				   |								|
 				   |D								|
-	------------------------------------------------------------				|
-	|			   |				|				|(Key,value)
-      List(I)			Set(I)			    Queue(I)		 	       Map(I)(K,V)
+	------------------------------------------------------------
+	|				|			   |				|				|(Key,value)
+ List(I)		Set(I)			    Queue(I)		Map(I)(K,V)
 	|			   |				|				|
 AbstractList(AC)	   AbstractSet(AC)		AbstractQueue(AC)		   AbstractMap(AC)
 	|			   |				|				|
@@ -47,6 +47,47 @@ List(I):-
 	float---Float
 	double---Double
 	
+
+
+
+Sorting Techniques:-
+----------------------
+
+
+
+	list		set			queue				Map
+	 |		   TreeSet    PriorityQueue			TreeMap
+	 |
+---------------
+	 		   
+
+
+
+						list
+						 |
+		--------------------------------------------------------				 	
+ 		|													|
+ Primitive Sorting									NonPrimitive
+        |
+	Collections.sort();
+
+Collection(I)
+Collections(class)
+
+	1) Comparable(std)
+	
+	
+	2) Comparator(std/marks/name)
+
+
+
+
+
+
+
+
+
+
 
 
 

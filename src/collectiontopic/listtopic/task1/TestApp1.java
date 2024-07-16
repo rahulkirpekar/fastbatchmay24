@@ -57,7 +57,7 @@ public class TestApp1
 						System.out.println("Update obj : " + obj);
 						if (obj instanceof Integer) 
 						{
-							int index = (Integer)obj;
+					  		int index = (Integer)obj;
 							System.out.println("update index : " + index );
 
 							s = list.get(index);
@@ -78,26 +78,23 @@ public class TestApp1
 						
 						flag = false;
 
-						int i = 0;
+						obj = isRecordAvailable(list, dlno);
 						
-						for (i = 0; i < list.size(); i++) 
+						if(obj instanceof Integer) 
 						{
-							s = list.get(i);
+							int index = (Integer)obj;
 							
-							if(s.getRno() == dlno) 
-							{
-								flag=true;
-								break;//i--index
-							}
+							System.out.println("update index : " + index );
+							
+							list.remove(index);
+							
+							System.out.println("Student record succssfully removed");
 						}
-						if(flag) 
-						{
-							list.remove(i);
-							s.disp();
-						}else 
+						else
 						{
 							System.out.println("Given "+dlno+" not found in records");
 						}
+						
 						break;
 				case 4:
 						System.out.println("Enter Rno whch you want to search :  "); 
@@ -115,7 +112,7 @@ public class TestApp1
 						break;
 			
 				case 5: 
-						for ( i = 0; i < list.size(); i++) 
+						for (int i = 0; i < list.size(); i++) 
 						{
 							s = list.get(i);
 							s.disp();
