@@ -1,6 +1,6 @@
-package collectiontopic.sortingtech.comprbltopic;
+package collectiontopic.sortingtech.comparatortopic;
 
-public class Student implements Comparable<Student>
+public class Student 
 {
 	int rno;
 	String name;
@@ -32,26 +32,5 @@ public class Student implements Comparable<Student>
 	}
 	public void setStd(int std) {
 		this.std = std;
-	}
-//	@Override
-//	public int compareTo(Student s2) 
-//	{
-//		//   s1         s2
-//		if(std > s2.std) 
-//		{
-//			return 1;
-//			
-//		}else if(std < s2.std) 
-//		{
-//			return -1;
-//		}else 
-//		{
-//			return 0;
-//		}
-//	}
-	@Override
-	public int compareTo(Student s2) 
-	{
-		return name.compareTo(s2.name);
 	}
 }

@@ -1,4 +1,4 @@
-package collectiontopic.sortingtech.comprbltopic;
+package collectiontopic.sortingtech.comparatortopic;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,9 +27,18 @@ public class TestApp1
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd());
 		}
 
-		Collections.sort(list);
+		Collections.sort(list, new StdWiseStudentComparator());
 		
 		System.out.println("After stdwise Sorting :");
+		for (int i = 0; i < list.size(); i++) 
+		{
+			Student s= 	list.get(i);
+			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd());
+		}
+		
+		Collections.sort(list, new NameWiseStudentComparator());
+		
+		System.out.println("After Namewise Sorting :");
 		for (int i = 0; i < list.size(); i++) 
 		{
 			Student s= 	list.get(i);
