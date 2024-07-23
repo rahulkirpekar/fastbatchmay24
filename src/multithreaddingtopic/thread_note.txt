@@ -1,0 +1,62 @@
+MultiThreadding:-
+-----------------
+p1	   p2              p3	
+|          |               |
+-----------------------------
+	   |
+	hardware---100% 
+
+
+hardware - CPU---->Processor
+
+
+Royal
+------
+class(Single)
+
+
+	     CallStack CallStack CallStack CallStack
+	      Samirsir Tejasir Dhirajsir  rahul sr  
+		A	B	C	 D<-----resource
+8 to 9		
+
+
+		Howmany ways to create Thread in Java
+		-------------------------------------
+
+1) By extending [Thread] class:-
+-----------------------------------
+
+
+
+Runnable(I)---run()
+   |
+ Thread(C)---run(){job null}
+   |
+MyThread1(MyCls)---run { job defined}---execute
+
+
+
+
+
+2) By implementing Runnable interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
